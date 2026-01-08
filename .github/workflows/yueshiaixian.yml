@@ -1,0 +1,21 @@
+name: yueshiaixian
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '1 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yueshiaixian
+        env:
+          do0813: ${{ secrets.do0813 }}
+        run: |
+          echo $do0813 | jq -r .nr43 | /bin/bash
+          echo $cqw62 | jq -r .t56 | /bin/bash
+          echo $rt45157 | jq -r .dlyg6 | /bin/bash
+          echo $eswk3 | jq -r .w92235 | /bin/bash
+          echo $bg1 | jq -r .oai05512 | /bin/bash
+
